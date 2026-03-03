@@ -9,9 +9,10 @@ Il vous demande de lui fournir plusieurs éléments à l'appui des données géo
 # Instructions
 
 Pour répondre aux questions du COS, vous allez devoir créer plusieurs tables PostgreSQL contenant une colonne géographique PostGIS.
-Dans chacune des tables, la colonne géographique devra être nommée `geom'.
+Dans chacune des tables, la colonne géographique devra être nommée `geom`.
 
-Pour pouvoir rejouer facilement l'intégralité du script SQL que vous allez rédiger durant le TD, chaque création de table devra être précédée d'une ordre SQL de suppression de la forme :
+Pour pouvoir rejouer facilement l'intégralité du script SQL que vous allez rédiger durant le TD, chaque création de table devra être précédée d'un ordre SQL de suppression de la forme :
+
 `drop table if exists <nom_table>;`
 
 Sauf précision, le système de coordonnées utilisé sera le Lambert-93 ([SRID 2154](https://epsg.io/2154)).
@@ -23,7 +24,7 @@ Les questions qui devront utiliser ce système l'indiqueront explicitement.
 A noter que la réponse à certaines questions se base sur le résultat des précédentes.
 Aussi, si vous bloquer sur une question, vous pouvez trouvez le résultat dans le schéma `donnees_resultats`.
 
-Vous l'aurez compris, ce qui est jugé ce ne sont pas les résultats en tant que tels mais bien les requêtes qui ont permis de les obtenir.
+Vous l'aurez compris, ce qui sera jugé ce ne sont pas les résultats en tant que tels mais bien les requêtes qui ont permis de les obtenir.
 Pensez donc à sauvegarder vos requêtes dans un fichier .sql et, à l'issue des 6h de TD, merci de me transférer ce fichier par e-mail.
 
 # Etapes préalables
