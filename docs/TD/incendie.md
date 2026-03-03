@@ -116,6 +116,13 @@ La requête doit débuter par une CTE qui donne l'anneau extérieur du périmèt
 
 ### Question 11
 
+Le COS a besoin de connaître la surface, en nombre d'hectares, du périmètre de sécurité pour chaque commune concernée.
+
+Créez une table `perimetres_communaux_securite` contenant les polygones des périmètres de sécurité sur l'emprise de chacune des communes concernées.
+En plus de la géométrie, cette table doit donner la surface de chaque polygone en hectares.
+
+Il est recommandé d'utiliser une CTE.
+
 ### Question 12
 
 ### Question 13
