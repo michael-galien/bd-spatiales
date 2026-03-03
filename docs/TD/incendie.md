@@ -19,7 +19,7 @@ Pour pouvoir rejouer facilement l'intégralité du script SQL que vous allez ré
 Sauf précision, le système de coordonnées utilisé sera le Lambert-93 ([SRID 2154](https://epsg.io/2154)).
 Dans cette projection, les mesures sont exprimées en m et m².
 
-L'autre système utilisé sera le WGS84 ([SRID 4326](https://epsg.io/4326)) bien connu grâce au GPS.
+L'autre système utilisé sera le WGS84 ([SRID 4326](https://epsg.io/4326)).
 Les questions qui devront utiliser ce système l'indiqueront explicitement.
 
 A noter que la réponse à certaines questions se base sur le résultat des précédentes.
