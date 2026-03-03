@@ -139,7 +139,7 @@ Les pilotes vous demandent de leur fournir la liste des mats éoliens en service
 Pour chaque mât, ils souhaitent avoir :
 * la longitude, c'est à dire la coordonnée X en WGS84,
 * la latitude, c'est à dire la coordonnée Y en WGS84,
-* la hauteur.
+* la hauteur du mât.
 
 Créez une table `mats_eoliens_proximite` avec les renseignements attendus par les pilotes ainsi qu'une colonne `geom` contenant la localisation ponctuelle des mâts en WGS84.
 
