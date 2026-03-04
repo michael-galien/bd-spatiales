@@ -206,7 +206,7 @@ Créez une table `front_feu(geom)` contenant la ligne de front construite à par
 
 Les fumées sont visibles jusqu'à 4 km du front de l'incendie.
 
-Créez une table `fumees(geom)` en calculant un buffer de 4 km à droite du front de feu préalablement disponible dans la table `front_feu`.
+Créez une table `fumees(geom)` en calculant un buffer de 4 km à droite du front de feu disponible dans la table `front_feu`.
 
 [La documentation](https://postgis.net/docs/ST_Buffer.html) indique comment orienter le calcul d'un buffer.
 
