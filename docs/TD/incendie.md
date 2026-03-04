@@ -233,3 +233,10 @@ Le COS doit informer la presse de la distance parcourue par l'incendie.
 Créez une table `distance_parcourue_incendie(distance_parcourue, geom)` contenant la distance parcourue par les flammes en mètres. Pour cela, déterminez la ligne la plus longue entre la géométrie `zone_incendie_fixe` et elle-même puis calculez sa longueur.
 
 ### Question 25
+
+Pour parvenir à maitriser le feu, le COS souhaite délimiter des zones de travail dont le traitement devra être suivi par le poste de commandement.
+
+Créez une table `grille_incendie_fixe(centre, geom)` qui donne les cellules d'une grille hexagonale de 100 mètres de côté sur l'emprise du feu fixé. Cette table sera composée de deux colonnes :
+
+* `geom` : les cellules de la grille,
+* `centre`: les coordonnées WGS84 du centre des cellules exprimées en degrés, minutes, secondes.
