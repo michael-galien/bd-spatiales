@@ -93,6 +93,7 @@ La zone très boisée rend difficile l'identification des limites communales.
 Le COS vous demande de lui confirmer que seule la commune de Joncels est pour l'heure impactée par l'incendie.
 
 Créez une table `commune_incendie(cleabs, code_insee, ..., geom)` confirmant la commune d'emprise de l'incendie.
+
 Cette table doit avoir les mêmes colonnes que la table `commune`.
 
 ### Question 8
@@ -100,6 +101,7 @@ Cette table doit avoir les mêmes colonnes que la table `commune`.
 Le COS souhaite informer les maires des communes limitrophes des opérations en cours et vous demande la liste des communes concernées.
 
 Créez une table `communes_limitrophes_incendie(cleabs, code_insee, ..., geom)` qui liste les communes limitrophes à celle de la table `commune_incendie`.
+
 Cette table doit avoir les mêmes colonnes que la table `commune`.
 
 ### Question 9
@@ -121,16 +123,17 @@ La requête doit débuter par une CTE qui donne l'anneau extérieur du périmèt
 Le COS a besoin de connaître la surface, en nombre d'hectares, du périmètre de sécurité pour chaque commune concernée.
 
 Créez une table `perimetres_communaux_securite(code_insee, code_insee_du_departement, nom_officiel, nb_ha, geom)` contenant les polygones des périmètres de sécurité sur l'emprise de chacune des communes concernées.
+
 En plus de la géométrie, cette table doit donner, le code INSEE de la commune, le code INSEE du département, le nom officiel et de la commune et la surface de chaque polygone en hectares.
 
 Il est recommandé d'utiliser une CTE.
 
 ### Question 12
 
-En repartant de la table `perimetres_communaux_securite` et en utilisant les fonctions de fenêtrage, créez une table `parts_perimetres_communaux_securite` qui donne :
+En repartant de la table `perimetres_communaux_securite` et en utilisant les fonctions de fenêtrage, donc sans `group by`, créez une table `parts_perimetres_communaux_securite(code_insee, code_insee_du_departement, nom_officiel, nb_ha, geom, part_total, part_departement)` où :
 
-* le pourcentage que représente le périmètre de sécurité de la commune sur le périmètre total de sécurité (100 * nb hectares périmètre communal / nb hectares périmètre total),
-* le pourcentage que représente le périmètre de sécurité de la commune sur le périmètre de sécurité du département (100 * nb hectares périmètre communal / nb hectares périmètre départemental).
+* `part_total` correspond au pourcentage que représente le périmètre de sécurité de la commune sur le périmètre total de sécurité (100 * nb hectares périmètre communal / nb hectares périmètre total),
+* `part_departement` correspond au pourcentage que représente le périmètre de sécurité de la commune sur le périmètre de sécurité du département (100 * nb hectares périmètre communal / nb hectares périmètre départemental).
 
 ### Question 13
 
