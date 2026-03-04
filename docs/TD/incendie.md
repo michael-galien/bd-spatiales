@@ -185,12 +185,16 @@ Par ailleurs, les fonctions de clustering donnent des `GeometryCollection` que Q
 
 ### Question 18
 
-Créez une table `enveloppes_clusters_perimetre_securite` à partir de la table `clusters_residentiels_perimetre_securite` contenant 2 colonnes :
+Créez une table `enveloppes_clusters_perimetre_securite(geom, nb_batiments)` à partir de la table `clusters_residentiels_perimetre_securite` contenant 2 colonnes :
 
 * une colonne `geom` qui donne le rectangle englobant du cluster,
 * une colonne `nb_batiments` qui indique le nombre de bâtiments présent dans le cluster.
 
 ### Question 19
+
+Le COS vous demande de lui préciser la distance en mètres de chacun des blocs résidentiels à la zone d'incendie.
+
+Créez une table `distances_enveloppes_perimetre_securite(geom, nb_batiments, distance)` contenant toutes les informations de la table `enveloppes_clusters_perimetre_securite` plus la distance entre chaque cluster et la zone d'incendie.
 
 ### Question 20
 
