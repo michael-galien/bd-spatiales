@@ -160,7 +160,7 @@ Créez une table `pp_voie_ferree(cleabs, nature, ..., geom)` contenant le tronç
 
 Cette table doit avoir les mêmes colonnes que la table `troncon_de_voie_ferree`.
 
-Pour cela, vous pouvez ordonner de façon croissante les troçons de voie ferrée suivant leur distance à la zone d'incendie et [ne garder que le premier résultat](https://www.postgresql.org/docs/current/queries-limit.html).
+Pour cela, vous pouvez ordonner de façon croissante les tronçons de voie ferrée suivant leur distance à la zone d'incendie et [ne garder que le premier résultat](https://www.postgresql.org/docs/current/queries-limit.html).
 
 ### Question 15
 
@@ -188,7 +188,7 @@ Par ailleurs, les fonctions de clustering donnent des `GeometryCollection` que Q
 Créez une table `enveloppes_clusters_perimetre_securite(geom, nb_batiments)` à partir de la table `clusters_residentiels_perimetre_securite` contenant 2 colonnes :
 
 * une colonne `geom` qui donne le rectangle englobant du cluster,
-* une colonne `nb_batiments` qui indique le nombre de bâtiments présent dans le cluster.
+* une colonne `nb_batiments` qui indique le nombre de bâtiments présents dans le cluster.
 
 ### Question 19
 
