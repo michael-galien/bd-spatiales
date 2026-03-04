@@ -208,11 +208,13 @@ Pour cela, vous pouvez créer un tableau de géométries grâce à la syntaxe `a
 
 Les fumées sont visibles jusqu'à 4 km du front de l'incendie.
 
-Créez une table `fumees(geom)` en calculant un buffer de 4 km à droite du front de feu disponible dans la table `front_feu`.
+Créez une table `fumees(geom)` en calculant une zone tampon de 4 km à droite du front de feu disponible dans la table `front_feu`.
 
-[La documentation](https://postgis.net/docs/ST_Buffer.html) indique comment orienter le calcul d'un buffer.
+[La documentation](https://postgis.net/docs/ST_Buffer.html) indique comment orienter le calcul d'une zone tampon.
 
 ### Question 22
+
+Ces fumées pourraient 
 
 ### Question 23
 
