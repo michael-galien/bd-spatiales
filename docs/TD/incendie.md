@@ -92,14 +92,14 @@ Créez une table `nb_ha_incendie(geom, nb_ha)` contenant la géométrie de la ta
 La zone très boisée rend difficile l'identification des limites communales.
 Le COS vous demande de lui confirmer que seule la commune de Joncels est pour l'heure impactée par l'incendie.
 
-Créez une table `commune_incendie(fid, cleabs, code_insee, ...)` confirmant la commune d'emprise de l'incendie.
+Créez une table `commune_incendie(cleabs, code_insee, ..., geom)` confirmant la commune d'emprise de l'incendie.
 Cette table doit avoir les mêmes colonnes que la table `commune`.
 
 ### Question 8
 
 Le COS souhaite informer les maires des communes limitrophes des opérations en cours et vous demande la liste des communes concernées.
 
-Créez une table `communes_limitrophes_incendie(fid, cleabs, code_insee, ...)` qui liste les communes limitrophes à celle de la table `commune_incendie`.
+Créez une table `communes_limitrophes_incendie(cleabs, code_insee, ..., geom)` qui liste les communes limitrophes à celle de la table `commune_incendie`.
 Cette table doit avoir les mêmes colonnes que la table `commune`.
 
 ### Question 9
