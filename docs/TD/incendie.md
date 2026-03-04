@@ -22,6 +22,7 @@ Dans cette projection, les mesures sont exprimées en m et m².
 L'autre système utilisé sera le WGS84 ([SRID 4326](https://epsg.io/4326)).
 Les questions qui devront utiliser ce système l'indiqueront explicitement.
 
+Les données sources à l'appui desquelles les réponses doivent être apportées sont disponibles dans le schéma `donnees_sources`.
 A noter que la réponse à certaines questions se base sur le résultat des précédentes.
 Aussi, si vous bloquez sur une question, vous pouvez trouver le résultat dans le schéma `donnees_resultats`.
 
@@ -146,7 +147,7 @@ Pour chaque mât, ils souhaitent avoir :
 * la latitude, c'est à dire la coordonnée Y en WGS84,
 * la hauteur du mât.
 
-Créez une table `mats_eoliens_proximite` avec les renseignements attendus par les pilotes ainsi qu'une colonne `geom` contenant la localisation ponctuelle des mâts en WGS84.
+Créez une table `mats_eoliens_proximite(longitude, latitude, hauteur, geom)` avec les renseignements attendus par les pilotes ainsi qu'une colonne `geom` contenant la localisation ponctuelle des mâts en WGS84.
 
 ### Question 14
 
@@ -155,7 +156,10 @@ Le passage d'un train pourrait être à l'origine du départ de feu.
 
 Pour mener des investigations, le COS vous demande d'identifier le tronçon de voie ferrée le plus proche de l'incendie.
 
-Créez une table `pp_voie_ferree` contenant le tronçon de voie ferrée le plus proche de la zone d'incendie.
+Créez une table `pp_voie_ferree(cleabs, nature, ..., geom)` contenant le tronçon de voie ferrée le plus proche de la zone d'incendie.
+
+Cette table doit avoir les mêmes colonnes que la table `troncon_de_voie_ferree`.
+
 Pour cela, vous pouvez ordonner de façon croissante les troçons de voie ferrée suivant leur distance à la zone d'incendie et [ne garder que le premier résultat](https://www.postgresql.org/docs/current/queries-limit.html).
 
 ### Question 15
