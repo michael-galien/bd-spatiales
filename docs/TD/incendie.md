@@ -16,10 +16,10 @@ Dans chacune des tables, la colonne géographique devra être nommée `geom`.
 
 Pour pouvoir rejouer facilement l'intégralité du script SQL que vous allez rédiger durant le TD, chaque création de table devra être précédée d'un ordre SQL de suppression de la forme `drop table if exists <nom_table>;`.
 
-Sauf précision, le système de coordonnées utilisé sera le Lambert-93 ([SRID 2154](https://epsg.io/2154)).
+Sauf précision, le système de coordonnées utilisé sera le Lambert-93 ([SRID 2154](https://epsg.io/2154){:target="_blank"}).
 Dans cette projection, les mesures sont exprimées en m et m².
 
-L'autre système utilisé sera le WGS84 ([SRID 4326](https://epsg.io/4326)).
+L'autre système utilisé sera le WGS84 ([SRID 4326](https://epsg.io/4326){:target="_blank"}).
 Les questions qui devront utiliser ce système l'indiqueront explicitement.
 
 Les données sources à l'appui desquelles les réponses doivent être apportées sont disponibles dans le schéma `donnees_sources`.
@@ -29,13 +29,13 @@ Aussi, si vous bloquez sur une question, vous pouvez trouver le résultat dans l
 Vous l'aurez compris, ce qui sera jugé ce ne sont pas les résultats en tant que tels mais bien les requêtes qui ont permis de les obtenir.
 Pensez donc à sauvegarder vos requêtes dans un fichier .sql et, à l'issue des 6h de TD, merci de me transférer ce fichier par e-mail.
 
-N'hésitez pas à vous référer [au cours](../Cours/Cours.pdf) ainsi qu'à la [documentation de PostGIS](https://postgis.net/docs/reference.html).
+N'hésitez pas à vous référer [au cours](../Cours/Cours.pdf){:target="_blank"} ainsi qu'à la [documentation de PostGIS](https://postgis.net/docs/reference.html){:target="_blank"}.
 
 ## Etapes préalables
 
 ### Initialisation de la BDD
 
-Les données sources et les données de correction sont disponibles dans le script .sql présent dans l'archive téléchargeable [via ce lien](../TD/initialisation_bdd.zip).
+Les données sources et les données de correction sont disponibles dans le script .sql présent dans l'archive téléchargeable [via ce lien](../TD/initialisation_bdd.zip){:target="_blank"}.
 
 Téléchargez et décompressez l'archive. Ensuite, importez les données dans la base de travail grâce à une commande `psql` de la forme :
 
@@ -49,7 +49,7 @@ QGIS vous permettra de visualiser le résultat de vos requêtes. Pour cela, un p
 
 Lancez QGIS et affichez les panneaux "Couches" et "Explorateur" grâce au menu Vue > Panneaux.
 
-![Vue > Panneaux](/images/panneaux_qgis.png "Vue > Panneaux")
+![Vue > Panneaux](./images/panneaux_qgis.png "Vue > Panneaux")
 
 #### Ajout des tuiles Google Maps Hybrid
 
@@ -57,7 +57,7 @@ Dans le panneau Explorateur, faites un clic-droit sur le noeud "Tuiles XYZ" et c
 
 Saissisez un nom de connexion et l'URL vers les tuiles Google Maps Hybrid suivante : http://mt0.google.com/vt/lyrs=y&hl=en&x={x}&y={y}&z={z}.
 
-![Connexion tuiles Google Maps Hybrid](/images/tuiles_google_maps.png "Connexion tuiles Google Maps Hybrid")
+![Connexion tuiles Google Maps Hybrid](./images/tuiles_google_maps.png "Connexion tuiles Google Maps Hybrid")
 
 #### Connexion PostgreSQL
 
@@ -65,7 +65,7 @@ Saissisez un nom de connexion et l'URL vers les tuiles Google Maps Hybrid suivan
 
 ### Question 1
 
-La [Cellule de Reconnaissance et d’Investigation Drone](https://www.sdis34.fr/la-cellule-de-reconnaissance-et-dinvestigation-drone/) vient de survoler la zone.
+La [Cellule de Reconnaissance et d’Investigation Drone](https://www.sdis34.fr/la-cellule-de-reconnaissance-et-dinvestigation-drone/){:target="_blank"} vient de survoler la zone.
 
 Elle indique que le point d'éclosion se situe à 43°48'9.720"N 3°10'23.804"E.
 Le front de feu est quant à lui positionné sur une ligne définie par les 3 points suivants :
@@ -180,7 +180,7 @@ Créez une table `pp_voie_ferree(cleabs, nature, ..., geom)` contenant le tronç
 
 Cette table doit avoir les mêmes colonnes que la table `troncon_de_voie_ferree`.
 
-Pour cela, vous pouvez ordonner de façon croissante les tronçons de voie ferrée suivant leur distance à la zone d'incendie et [ne garder que le premier résultat](https://www.postgresql.org/docs/current/queries-limit.html).
+Pour cela, vous pouvez ordonner de façon croissante les tronçons de voie ferrée suivant leur distance à la zone d'incendie et [ne garder que le premier résultat](https://www.postgresql.org/docs/current/queries-limit.html){:target="_blank"}.
 
 ### Question 15
 
@@ -200,7 +200,7 @@ Le COS souhaite protéger en priorité les habitations. Pour cela, il vous deman
 
 A l'appui de la table `batiments_perimetre_securite`, créez une table `clusters_residentiels_perimetre_securite(geom)` contenant les blocs de bâtiments à 500 mètres les uns des autres dont l'`usage_1` est résidentiel.
 
-A savoir, les fonctions de clustering retournent des tableaux qu'il est possible de convertir en lignes grâce à [la fonction `unnest`](https://www.postgresql.org/docs/current/functions-array.html).
+A savoir, les fonctions de clustering retournent des tableaux qu'il est possible de convertir en lignes grâce à [la fonction `unnest`](https://www.postgresql.org/docs/current/functions-array.html){:target="_blank"}.
 Par ailleurs, les fonctions de clustering donnent des `GeometryCollection` que QGIS n'est pas en mesure d'afficher.
 
 ### Question 18
@@ -230,7 +230,7 @@ Les fumées sont visibles jusqu'à 4 km du front de l'incendie.
 
 Créez une table `fumees(geom)` en calculant une zone tampon de 4 km à droite du front de feu disponible dans la table `front_feu`.
 
-[La documentation](https://postgis.net/docs/ST_Buffer.html) indique comment orienter le calcul d'une zone tampon.
+[La documentation](https://postgis.net/docs/ST_Buffer.html){:target="_blank"} indique comment orienter le calcul d'une zone tampon.
 
 ### Question 22
 
