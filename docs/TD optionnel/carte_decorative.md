@@ -8,7 +8,7 @@ L'objectif de ce TD optionnel est de créer une carte décorative centrée sur u
 
 Sur Google Maps, repéré un lieu qui vous rappelle un bon souvenir. Faites alors un clic-droit sur la carte à l'endroit du lieu et cliquez sur les coordonnées afin de les copier.
 
-Attention à l'ordre des coordonnées, Google Maps les donnent en latitude (X), longitude (Y).
+Attention à l'ordre des coordonnées, Google Maps les donnent en latitude (Y), longitude (X).
 
 ![Identification du lieu sur Google Maps](./images/lieu_google_maps.png "Identification du lieu sur Google Maps")
 
@@ -83,4 +83,5 @@ Le panneau "Couches" devrait alors afficher quelque chose de semblable à ceci :
 
 ### Etape 9
 
-
+* Ouvrez les propriétés de la couche `troncons_poi` et affichez les options de symbologie.
+* Remplacez "Symbole unique" par "Catégorisé" et dans "Valeur" sélectionnez "Importance".
