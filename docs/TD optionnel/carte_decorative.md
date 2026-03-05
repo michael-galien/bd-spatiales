@@ -8,7 +8,7 @@ L'objectif de ce TD optionnel est de créer une carte décorative centrée sur u
 
 Sur Google Maps, repéré un lieu qui vous rappelle un bon souvenir. Faites alors un clic-droit sur la carte à l'endroit du lieu et cliquez sur les coordonnées afin de les copier.
 
-Attention à l'ordre des coordonnées, Google Maps les donnent en latitude (Y), longitude (X).
+Attention à l'ordre des coordonnées, Google Maps les donne en latitude (Y), longitude (X).
 
 ![Identification du lieu sur Google Maps](./images/lieu_google_maps.png "Identification du lieu sur Google Maps")
 
@@ -32,7 +32,7 @@ Créez une table `surfaces_hydrographiques_poi(geom)` qui contient l'intersectio
 
 ### Etape 6
 
-Dans une nouveau projet QGIS, ajoutez les couches de haut en bas dans l'ordre suivant :
+Dans un nouveau projet QGIS, ajoutez les couches de haut en bas dans l'ordre suivant :
 
 * `poi`
 * `troncons_poi`
@@ -126,7 +126,7 @@ Le panneau "Couches" devrait alors afficher quelque chose de semblable à ceci :
 ### Etape 11
 
 * Ouvrez les propriétés de la couche `surfaces_hydrographiques_poi` et affichez les options de symbologie.
-* Modifiez les propriétés du "Remplissage simple" pour que la couleur de remplissage soit bleu (code #4fbbcf) et pour qu'il n'y ait pas de trait de contour.
+* Modifiez les propriétés du "Remplissage simple" pour que la couleur de remplissage soit bleue (code #4fbbcf) et pour qu'il n'y ait pas de trait de contour.
 
 ![Symbologie des surfaces hydrographiques](./images/symbologie_surfaces_hydrographiques.png "Symbologie des surfaces hydrographiques")
 
