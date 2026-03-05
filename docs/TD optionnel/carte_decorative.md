@@ -97,3 +97,6 @@ Le panneau "Couches" devrait alors afficher quelque chose de semblable à ceci :
 
 ![Symbole de la catégorie 1](./images/symbole_categorie_1.png "Symbole de la catégorie 1")
 
+* Faites un clic-droit sur le symbole du premier item et copiez le symbole.
+
+![Copier le symbole](./images/copier_symbole.png "Copier le symbole")
