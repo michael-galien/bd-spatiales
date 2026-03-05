@@ -51,6 +51,15 @@ Le panneau "Couches" devrait alors afficher quelque chose de semblable à ceci :
 
 ![Symbole simple](./images/symbole_simple.png "Symbole simple")
 
-* Dans "Type de symbole", sélectionnez "Symbole image raster"
+* Dans "Type de symbole", sélectionnez "Symbole image raster".
 
 ![Symbole image raster](./images/symbole_image_raster.png "Symbole image raster")
+
+* Appuyez sur le bouton "..." et sélectionnez le chemin vers l'image préalablement téléchargée.
+
+![Sélection de l'étoile](./images/selection_etoile.png "Sélection de l'étoile")
+
+* Dans "Rendu de la couche", cochez "Effets".
+* Cliquez sur le bouton "* - Personnaliser les effets" et sélectionnez "Ombre portée".
+
+![Effet d'ombre portée](./images/effet_ombre_portee.png "Effet d'ombre portée")
