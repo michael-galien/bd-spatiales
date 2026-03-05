@@ -65,6 +65,8 @@ Le panneau "Couches" devrait alors afficher quelque chose de semblable à ceci :
 
 ![Effet d'ombre portée](./images/effet_ombre_portee.png "Effet d'ombre portée")
 
+* Validez en cliquant sur "OK".
+
 ### Etape 8
 
 * Ouvrez les propriétés de la couche `poi` et affichez les options d'étiquetage.
@@ -80,6 +82,8 @@ Le panneau "Couches" devrait alors afficher quelque chose de semblable à ceci :
 * Positionnez l'étiquette en mode "Décalé par rapport au point" de sorte à ce qu'elle s'affiche 5 millimètres en dessous.
 
 ![Position de l'étiquette](./images/etiquette_position.png "Position de l'étiquette")
+
+* Validez en cliquant sur "OK".
 
 ### Etape 9
 
@@ -100,3 +104,12 @@ Le panneau "Couches" devrait alors afficher quelque chose de semblable à ceci :
 * Faites un clic-droit sur le symbole du premier item et copiez le symbole.
 
 ![Copier le symbole](./images/copier_symbole.png "Copier le symbole")
+
+* Faites un clic-droit sur les autres items et collez le symbole.
+
+![Coller le symbole](./images/coller_symbole.png "Coller le symbole")
+
+* Double-cliquez sur le symbole du dernier item (celui sans valeur) pour en afficher les propriétés.
+* Diminuez la taille du symbole à 0.2 millimètres.
+
+* Validez en cliquant sur "OK".
