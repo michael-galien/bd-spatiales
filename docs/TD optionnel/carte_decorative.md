@@ -1,5 +1,7 @@
 # TD optionnel
 
+[Retourner à l'accueil](../index.md)
+
 ## Objectif
 
 L'objectif de ce TD optionnel est de créer une carte décorative centrée sur un lieu dans l'Hérault qui vous est cher.
