@@ -57,7 +57,7 @@ Dans le panneau "Explorateur", faites un clic-droit sur le noeud "Tuiles XYZ" et
 
 Saissisez un nom de connexion et l'URL vers les tuiles Google Maps Hybrid suivante :
 
-http://mt0.google.com/vt/lyrs=y&hl=en&x={x}&y={y}&z={z}.
+http://mt0.google.com/vt/lyrs=y&hl=en&x={x}&y={y}&z={z}
 
 ![Connexion tuiles Google Maps Hybrid](./images/connexion_tuiles_google_maps_hybrid.png "Connexion tuiles Google Maps Hybrid")
 
