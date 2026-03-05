@@ -37,7 +37,7 @@ N'hésitez pas à vous référer [au cours](../Cours/Cours.pdf){:target="_blank"
 
 Les données sources et les données de correction sont disponibles dans le script .sql présent dans l'archive téléchargeable [via ce lien](../TD/initialisation_bdd.zip){:target="_blank"}.
 
-Téléchargez et décompressez l'archive. Ensuite, importez les données dans la base de travail grâce à une commande `psql` de la forme :
+Téléchargez et décompressez l'archive. Ensuite, importez les données dans la base PostgreSQL / PostGIS grâce à une commande `psql` de la forme :
 
 `psql -h <serveur_pg> -U <nom_utilisateur> -d <nom_bdd> -f <chemin_fichier_sql>`
 
@@ -59,9 +59,15 @@ Saissisez un nom de connexion et l'URL vers les tuiles Google Maps Hybrid suivan
 
 http://mt0.google.com/vt/lyrs=y&hl=en&x={x}&y={y}&z={z}.
 
-![Connexion tuiles Google Maps Hybrid](./images/tuiles_google_maps.png "Connexion tuiles Google Maps Hybrid")
+![Connexion tuiles Google Maps Hybrid](./images/connexion_tuiles_google_maps_hybrid.png "Connexion tuiles Google Maps Hybrid")
 
 #### Connexion PostgreSQL
+
+Dans le panneau Explorateur, faites un clic-droit sur le noeud "PostgreSQL" et choisissez "Nouvelle connexion...".
+
+Saisissez les paramètres de connexion à la base de données PostgreSQL / PostGIS. Prennez soin de cocher la case "Lister les tables sans géométries".
+
+![Connexion PostgreSQL / PostGIS](./images/tuiles_google_maps.png "Connexion PostgreSQL / PostGIS")
 
 ## Questions
 
