@@ -92,3 +92,8 @@ Le panneau "Couches" devrait alors afficher quelque chose de semblable à ceci :
 
 ![Catégories de symboles](./images/categories_symboles.png "Catégories de symboles")
 
+* Double-cliquez sur le symbole du premier item pour en afficher les propriétés.
+* Augmentez la taille à 0.8 millimètres et changer la couleur pour un gris foncé (code #707070), puis validez pour revenir aux options de symbologie.
+
+![Symbole de la catégorie 1](./images/symbole_categorie_1.png "Symbole de la catégorie 1")
+
