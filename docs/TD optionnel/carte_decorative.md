@@ -122,3 +122,16 @@ Le panneau "Couches" devrait alors afficher quelque chose de semblable à ceci :
 ![Symbologie des bâtiments notables](./images/symbologie_batiments_notables.png "Symbologie des bâtiments notables")
 
 * Validez en cliquant sur "OK".
+
+### Etape 11
+
+* Ouvrez les propriétés de la couche `surfaces_hydrographiques_poi` et affichez les options de symbologie.
+* Modifiez les propriétés du "Remplissage simple" pour que la couleur de remplissage soit bleu (code #4fbbcf) et pour qu'il n'y ait pas de trait de contour.
+
+![Symbologie des surfaces hydrographiques](./images/symbologie_surfaces_hydrographiques.png "Symbologie des surfaces hydrographiques")
+
+* Validez en cliquant sur "OK".
+
+A ce stade, le panneau "Couches" devrait être identique à ceci :
+
+![Symboles des couches](./images/symboles_couches.png "Symboles des couches")
