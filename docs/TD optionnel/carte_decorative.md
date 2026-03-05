@@ -164,3 +164,9 @@ Vous devriez voir dans la vue cartographique une représentation similaire à ce
 * Modifier l'échelle pour être au 1/20000.
 
 ![Modification de l'échelle](./images/modification_echelle.png "Modification de l'échelle")
+
+* Cliquez sur "Ajouter un objet" > "Ajouter Etiquette" et positionnez là sur le bas de la page.
+* Dans les propriétés de l'étiquette, modifiez le texte et la police à votre convenance.
+* Vous pouvez "Exporter au format image..." depuis le menu "Projet".
+
+![Export de la carte](./images/export.png "Export de la carte")
