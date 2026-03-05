@@ -77,7 +77,7 @@ Le panneau "Couches" devrait alors afficher quelque chose de semblable à ceci :
 
 ![Tampon de l'étiquette](./images/etiquette_tampon.png "Tampon de l'étiquette")
 
-* Positionnez l'étiquette de façon décalé par rapport au point de sorte à ce qu'elle s'affiche 5 millimètres en dessous.
+* Positionnez l'étiquette en mode "Décalé par rapport au point" de sorte à ce qu'elle s'affiche 5 millimètres en dessous.
 
 ![Position de l'étiquette](./images/etiquette_position.png "Position de l'étiquette")
 
@@ -85,3 +85,10 @@ Le panneau "Couches" devrait alors afficher quelque chose de semblable à ceci :
 
 * Ouvrez les propriétés de la couche `troncons_poi` et affichez les options de symbologie.
 * Remplacez "Symbole unique" par "Catégorisé" et dans "Valeur" sélectionnez "Importance".
+
+![Symbologie Catégorisé](./images/symbologie_categorise.png "Symbologie Catégorisé")
+
+* Cliquez 4 fois sur le "+ - Ajouter" et au niveau de la valeur des 3 premiers items, renseignez respectivement "1", "2" et "3".
+
+![Catégories de symboles](./images/categories_symboles.png "Catégories de symboles")
+
