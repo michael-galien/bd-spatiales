@@ -35,7 +35,7 @@ N'hésitez pas à vous référer [au cours](../Cours/Cours.pdf){:target="_blank"
 
 ### Initialisation de la BDD
 
-Les données sources et les données de correction sont disponibles dans le script .sql présent dans l'archive téléchargeable [via ce lien](../TD/initialisation_bdd.zip){:target="_blank"}.
+Les données sources et les données résultats sont disponibles dans le script .sql présent dans l'archive téléchargeable [via ce lien](../TD/initialisation_bdd.zip){:target="_blank"}.
 
 Téléchargez et décompressez l'archive. Ensuite, importez les données dans la base PostgreSQL / PostGIS grâce à une commande `psql` de la forme :
 
@@ -55,7 +55,7 @@ Lancez QGIS et affichez les panneaux "Couches" et "Explorateur" grâce au menu "
 
 Dans le panneau "Explorateur", faites un clic-droit sur le noeud "Tuiles XYZ" et choisissez "Nouvelle connexion...".
 
-Saissisez un nom de connexion et l'URL vers les tuiles Google Maps Hybrid suivante :
+Saisissez un nom de connexion et l'URL vers les tuiles Google Maps Hybrid suivante :
 
 http://mt0.google.com/vt/lyrs=y&hl=en&x={x}&y={y}&z={z}
 
