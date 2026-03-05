@@ -134,3 +134,11 @@ Le panneau "Couches" devrait alors afficher quelque chose de semblable à ceci :
 A ce stade, le panneau "Couches" devrait être identique à ceci :
 
 ![Symboles des couches](./images/symboles_couches.png "Symboles des couches")
+
+### Etape 12
+
+Depuis le panneau "Couches", faites un clic-droit sur la couche `troncons_poi` et sélectionnez "Zoomer sur la(les) couche(s)".
+
+Vous devriez voir dans la vue cartographique une représentation similaire à celle-ci.
+
+![Vue cartographique](./images/vue_cartographique.png "Vue cartographique")
