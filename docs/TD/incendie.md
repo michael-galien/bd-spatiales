@@ -224,7 +224,7 @@ A l'appui de la table `batiments_perimetre_securite`, créez une table `clusters
 A savoir, les fonctions [`ST_ClusterWithin`](https://postgis.net/docs/ST_ClusterWithin.html){:target="_blank"} et [`ST_ClusterIntersecting`](https://postgis.net/docs/ST_ClusterIntersecting.html){:target="_blank"} retournent un tableau de `GeometryCollection` :
 
 * Pour convertir le tableau en lignes vous pouvez utiliser [la fonction `unnest`](https://www.postgresql.org/docs/current/functions-array.html){:target="_blank"}.
-* Ensuite, vous devez extraire les polygones des `GeometryCollection` et sorte à obtenir des `MultiPolygon` visualisables sous QGIS.
+* Ensuite, vous devez extraire les polygones des `GeometryCollection` de sorte à obtenir des `MultiPolygon` visualisables sous QGIS.
 
 ### Question 18
 
