@@ -252,9 +252,9 @@ Créez une table `fumees(geom)` en calculant une zone tampon de 4 km à droite d
 
 ### Question 22
 
-Ces fumées pourraient incommoder les personnes les plus vulnérables. Le COS vous demande de lui fournir une estimation des populations de moins de 14 ans et de plus de 65 ans habitants dans les zones de dégagement des fumées.
+Ces fumées pourraient incommoder les personnes les plus vulnérables. Le COS vous demande de lui fournir une estimation des populations de 0 à 5 ans et de 65 ans et plus habitants dans les zones de dégagement des fumées.
 
-A partir de la table `carroyage_insee`, créez une table `personnes_vulnerables(pop_0_14_ans, pop_65_ans_et_plus)` qui donne la somme arrondie à l'unité du nombre de personnes de moins de 14 ans et de plus de 65 ans habitants dans un carreau totalement ou partiellement recouvert par les fumées.
+A partir de la table `carroyage_insee`, créez une table `personnes_vulnerables(pop_0_5_ans, pop_65_ans_et_plus)` qui donne la somme arrondie à l'unité du nombre de personnes de 0 à 5 ans et de 65 ans et plus habitants dans un carreau totalement ou partiellement recouvert par les fumées.
 
 Bien que la table ne dispose pas de géométrie, il reste possible de l'ajouter à un projet QGIS et d'en afficher la table attributaire.
 
