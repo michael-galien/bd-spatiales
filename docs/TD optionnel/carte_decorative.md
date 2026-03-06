@@ -162,6 +162,10 @@ Vous devriez voir dans la vue cartographique une représentation similaire à ce
 
 ![Propriétés de la page](./images/proprietes_page.png "Propriétés de la page")
 
+* Changez le format de la page en A3.
+
+![Format de la page](./images/page_format_a3.png "Format de la page")
+
 * Depuis le menu "Vue", cliquez sur "Zoomer sur l'emprise totale".
 * Cliquez sur "Ajouter un objet" > "Ajouter carte" et faites en sorte que l'objet prenne l'intégralité de la page.
 * Faites un clic-droit sur l'objet et sélectionnez "Propriétés de l'objet...".
