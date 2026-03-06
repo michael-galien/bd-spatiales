@@ -221,8 +221,10 @@ Le COS souhaite protéger en priorité les habitations. Pour cela, il vous deman
 
 A l'appui de la table `batiments_perimetre_securite`, créez une table `clusters_residentiels_perimetre_securite(geom)` contenant les blocs de bâtiments à 500 mètres les uns des autres dont l'`usage_1` est `Résidentiel`.
 
-A savoir, les fonctions de clustering retournent des tableaux qu'il est possible de convertir en lignes grâce à [la fonction `unnest`](https://www.postgresql.org/docs/current/functions-array.html){:target="_blank"}.
-Par ailleurs, les fonctions de clustering donnent des `GeometryCollection` que QGIS n'est pas en mesure d'afficher.
+A savoir, les fonctions [ST_ClusterWithin](https://postgis.net/docs/ST_ClusterWithin.html){:target="_blank"} et [ST_ClusterIntersecting](https://postgis.net/docs/ST_ClusterIntersecting.html){:target="_blank"} retournent un tableau de `GeometryCollection` :
+
+* Pour convertir le tableau en lignes vous pouvez utiliser [la fonction `unnest`](https://www.postgresql.org/docs/current/functions-array.html){:target="_blank"}.
+* Ensuite, vous devez extraire les polygones des `GeometryCollection` et sorte à obtenir des `MultiPolygon` visualisables sous QGIS.
 
 ### Question 18
 
